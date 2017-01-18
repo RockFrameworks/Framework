@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html th:lang="${applicationModel.locale}" lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <!---
+    <meta name="fragment" content="!"/>
+    <link rel="dns-prefetch" href="//images.mndigital.com" />
+    <link rel="dns-prefetch" href="//ssli.ebayimg.com" />
+    <link rel="dns-prefetch" href="//cache11.stubhubstatic.com" />
+    <link rel="dns-prefetch" href="//stubhub.tt.omtrdc.net" />
+    <link rel="dns-prefetch" href="//dpm.demdex.net" />
+    <link rel="dns-prefetch" href="//was.stubhub.com" />
+    <link rel="dns-prefetch" href="//track.stubhub.com" />
+    <link rel="dns-prefetch" href="//fls.doubleclick.net" />
+    -->
+    <meta name='description' content='Buy and sell sports tickets, concert tickets, theater tickets and Broadway tickets on StubHub!' />
+    <link rel="canonical" href="https://www.stubhub.com/" />
+    <title>StubHub!</title>
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    
+    <script type="text/javascript">
+        var applicationModel = {
+            "appName": "myaccount",
+            "OMN": {
+                "pageName": "UE: MyAccount",
+                "pageType": "UE: MyAccount",
+                "siteSections": "MyAccount"
+            },
+            "uservoice": {
+                "forumId": "298329"
+            },
+            "appVersion": "2.0.2-SNAPSHOT",
+            "icmsTemplatePath": "/resources/shape/templates",
+            "metaTagViewport": "width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no",
+            "title": "StubHub Unified MyAccount",
+            "bugsnagApikey": "93127d2ea57c2c8a4b13b5bbf059da66",
+            "paypalAuthend": "${pi.paypal.api.env}",
+            "paypalClientId_us": "${pi.paypal.client.id}",
+            "paypalClientId_uk": "${pi.paypal.client.id.bob_2}",
+            "paypalClientId_de": "${pi.paypal.client.id.bob_3}",
+            "paypalReturnUrl_us": "${pi.paypal.return.url}",
+            "paypalReturnUrl_uk": "${pi.paypal.return.url.bob_2}",
+            "paypalReturnUrl_de": "${pi.paypal.return.url.bob_3}",
+            "ticketbisMyaccountUrl_us": "${ticketbis.myaccount.url.us}",
+            "ticketbisMyaccountUrl_uk": "${ticketbis.myaccount.url.uk}",
+            "ticketbisMyaccountUrl_de": "${ticketbis.myaccount.url.de}",
+            "ticketbisMyaccountUrl_fr": "${ticketbis.myaccount.url.fr}",
+            "ticketbisMyaccountUrl_mx": "${ticketbis.myaccount.url.mx}"
+        };
+    </script>
+    
+    <!--S: resell-->
+    <link rel="stylesheet" href="https://slcq023-cache11.stubhubstatic.com/resources/shape/styles/sellticket-1.pb_feature_pibsf_modules.0-SNAPSHOT/module-main.css" />
+    <!--E: resell-->
+
+    <!--Initalization of SH object -->
+    <script th:inline="javascript">
+        var SH = SH || {};
+    </script>
+
+    <script th:inline="javascript" type="text/javascript">
+        SH.bugsnag = {
+            'apiKey' : /*[[${applicationModel.bugsnagApikey}]]*/ 'abcdefg'
+        };
+        // Adding dataLayer object to send paramters to GTM
+        dataLayer = [];
+    </script>
+
+    <!-- BEGIN "bugsnag-config" fragment -->
+    <th:block th:replace="${applicationModel.fragmentName} :: bugsnag-config (${applicationModel}, ${env})"/>
+    <!-- END "bugsnag-config" fragment -->
+
+    <script th:src="|${applicationModel.configBaseUrl}/resources/shape/scripts/common-${applicationModel.appCommonVersion}/common-boot.js|"
+            src="{%=appCommon.staticHost%}/resources/shape/scripts/common-{%=appCommon.version%}/common-boot.js"></script>
+    <script th:src="|${applicationModel.configBaseUrl}/promotions/scratch/ue-app-head/common-temp.js|"
+            src="http://cache11.stubhubstatic.com/promotions/scratch/ue-app-head/common-temp.js"></script>
+</head>
+<body>
+    <script th:inline="javascript">
+        SH.mbox = {}; /*Global namespace for mbox a/b testing*/
+        SH.appName = /*[[${applicationModel.appName}]]*/ '{%=appName%}';
+        SH.appVersion = /*[[${applicationModel.appVersion}]]*/ '{%=appVersion%}';
+        SH.appFolder = SH.appName + '-' + SH.appVersion;
+        SH.app = {};
+        SH.app.staticHost = /*[[${applicationModel.configBaseUrl}]]*/ '{%=app.staticHost%}'; // @TODO Deprecate configBaseUrl
+        SH.appCommonVersion = /*[[${applicationModel.appCommonVersion}]]*/ '{%=appCommon.version%}'; // @TODO Change to SH.appCommon.version
+        SH.appCommon = {};
+        SH.appCommon.staticHost = /*[[${applicationModel.configBaseUrl}]]*/ '{%=appCommon.staticHost%}';
+        SH.locale = /*[[${applicationModel.locale}]]*/  '{%=locale%}';
+        SH.shlocale = /*[[${applicationModel.shlocale}]]*/ '{%=locale%}';
+        SH.country = SH.shlocale.split('-')[1].toLowerCase(); //'us';
+        SH.gsConfig = /*[[${applicationModel.siteConfiguration}]]*/ <!-- @echo gsConfig -->;
+        SH.cacheStaticURL = /*[[${applicationModel.baseUrl}]]*/ 'https://static.srwq03.com/cmx';
+        SH.targetHost = /*[[${env['external.domainName']}]]*/ '{%=targetHost%}';
+        SH.icmsServer = /*[[${applicationModel.icmsServer}]]*/ 'https://static.slcq023.com/cms';
+        SH.icmsTemplatePath = /*[[${applicationModel.icmsTemplatePath}]]*/ '/resources/shape/templates';
+        SH.configBaseUrl = /*[[${applicationModel.configBaseUrl}]]*/ '{%=app.staticHost%}';  // @TODO Deprecate configBaseUrl
+        SH.brandName = /*[[${env['app.default.brand']}]]*/ '{%=brandToggle.featureValue%}';
+        SH.skinName = /*[[${applicationModel.skinName}]]*/ '';
+        SH.searchInitConfig = /*[[${env['spa.global.searchInit.config']}]]*/ '{"homepage":{"showSearchBox":true,"searchRenderOpt":{"element":"#search-layout-container","pageName":"SH.HP_OMN.pageName"}},"browse":{"showSearchBox":true,"urls":{"/find/s/[?]{1}q":{"showSearchBox":false,"searchRenderOpt":{"element":"#search-layout-container"}}}},"event":{"showSearchBox":true}}';
+        SH.enableLog = /*[[${applicationModel.enableLog}]]*/ false;
+
+        SH.login = {};
+        SH.login.pwdResetToken = /*[[${#httpServletRequest.getParameter('pwdResetToken')}]]*/ undefined;
+
+        SH.tracker = {
+            targetHost: 'https://track.' + SH.targetHost,
+            account: 'mweb-' + SH.country
+        };
+        SH.trackerAccount = SH.tracker.account; // @TODO deprecated. Needs to remove.
+
+        SH.OMN = /*[[${applicationModel.OMN}]]*/ {'pageName':'UE: Home','pageType':'UE: Homepage'};
+
+        SH.uservoice =  /*[[${applicationModel.uservoice}]]*/ {"forumId": "297912"};
+
+        SH.GTM = {
+            'en-us': {
+                'dev': 'GTM-KM6F32',
+                'prod': 'GTM-PQ5LTR'
+            },
+            'en-gb': {
+                'dev': 'GTM-P4BWB8',
+                'prod': 'GTM-WZ86BD'
+            },
+            'de-de': {
+                'dev': 'GTM-MZSQRX',
+                'prod': 'GTM-TTTJ6M'
+            }
+        };
+
+        SH.chat =  /*[[${applicationModel.chat}]]*/ {"eeid" : "200106303049" };
+
+        SH.bloomreachIds =  /*[[${applicationModel.bloomreachIds}]]*/ {"1": "5107"};
+
+        // Push Notification
+        SH.roostKey = {
+            'dev' : '5mbddh7aaiu3twtl0ywku1taweb32m7a',
+            'prod' : 'w7jb2mql1engtxycifo2y6xyr9udkpzx'
+        };
+
+        window._roost = (typeof window._roost !== 'undefined') ? window._roost : [];
+        window._roost.push(['autoprompt', false]);
+
+    </script>
+    <noscript th:text="#{indexPage.noscript}">
+        Your browser does not support Javascript, please enable it!
+    </noscript>
+
+    <header class='gh-container'>
+        <div id="banner-container"></div>
+        <div class='gh-navigation'>
+            <div class='gh-navigation-content'></div>
+            <div class='search-container borderless-search-bar'></div>
+        </div>
+        <div id="message-banner-container"></div>
+        <!-- BEGIN "header" fragment -->
+        <th:block th:replace="${applicationModel.fragmentName} :: header (${applicationModel}, ${env})"/>
+        <div id="page-status-container"></div>
+        <!-- END "header" fragment -->
+    </header>
+    <div class="sh-search-active-curtain"></div>
+
+    <main id="main"> <!--/* @TODO use it? */-->
+        <div id="app_container"></div>
+
+        <!-- BEGIN "main" fragment -->
+        <th:block th:replace="${applicationModel.fragmentName} :: main (${applicationModel}, ${env})"/>
+        <!-- END "main" fragment -->
+        <!--
+        <div id="login_container"></div>
+        -->
+        <div id="twofa_container"></div>
+
+        <section id="common-chat-container">
+            <div id="common-chat-sh-container" class="common-chat-sh-container"></div>
+            <div id="common-chat-osc-container">
+              <div id="common-chat-osc-invitation">
+              </div>
+            </div>
+        </section>
+
+    </main>
+    <div class="mboxcalls">
+        <div id="target-loginFlow-mbox" class="mboxDefault"></div>
+        <div class="mboxDefault" id="mbox_container"></div>
+        <div id="mbox_appPromoter" class="mboxDefault"></div>
+    </div>
+    <footer id="footer">
+        <div id="mobile_appPromoter" style=""></div>
+        <!-- BEGIN "footer" fragment -->
+        <th:block th:replace="${applicationModel.fragmentName} :: footer (${applicationModel}, ${env})"/>
+        <!-- END "footer" fragment -->
+        <div id="threatmetrix_container" class="hidden"></div>
+    </footer>
+
+    <script th:src="|${applicationModel.configBaseUrl}/resources/shape/scripts/common-${applicationModel.appCommonVersion}/common-main.js|"
+            src="{%=appCommon.staticHost%}/resources/shape/scripts/common-{%=appCommon.version%}/common-main.js"></script>
+
+    <!-- BEGIN "page-JsIncludesTop" fragment -->
+    <!--/* Normally only javascript code snippet should be put into this block */-->
+    <th:block th:replace="${applicationModel.fragmentName} :: page-JsIncludesTop (${applicationModel}, ${env})"/>
+    <script src="//cache11.stubhubstatic.com/resources/shape/scripts/sellticket-{%=modulesVersion.sellticket%}/module-main.js"></script>
+    <script th:inline="javascript">
+        SH.MYA = {
+            buyModulesVersion: '{%=modulesVersion.buy%}',
+            sellticketModulesVersion: '{%=modulesVersion.sellticket%}',
+            achWhiteCountryList: 'CA,US',
+            sellerPaymentsCurrencyList: 'USD,GBP,EUR',
+            sellerPaymentsByCurrency: '{\"USD\":[\"paypal\",\"ach\",\"check\"],\"GBP\":[\"paypal\"],\"EUR\":[\"paypal\"]}',
+            PiHighRiskCountries: 'DO,EG,GT,IL,PH,VE,KW',
+            BtPayPalLocaleMapping: '{\"es-mx\":\"es-es\"}'
+        };
+    </script>
+    <!-- END "page-JsIncludesTop" fragment -->
+
+
+    <script th:inline="javascript">
+        define('global_context', [], function() { // @TODO deprecate global_context, use SH.* instead
+            'use strict';
+            return {
+                // app info
+                'appName': SH.appName,
+                'appVersion' : SH.appVersion,
+                'appFolder' : SH.appFolder,
+                'appCommonVersion' : SH.appCommonVersion,
+                'locale' : SH.locale,
+                'shlocale' : SH.shlocale,
+                'country' : SH.country,
+                'gsConfig' : SH.gsConfig,
+                'staticUrl' : /*[[${applicationModel.staticUrl}]]*/ '', // @TODO deprecate staticUrl
+                // logger
+                'loggerURL': 'https://log.' + SH.targetHost + '.com',
+                // tracker
+                'trkAccount': SH.trackerAccount,
+                'enableTracker': /*[[${applicationModel.trackerEnable}]]*/ 'false',
+                'enableLog' : SH.enableLog,
+                'OMN': SH.OMN,
+                'apiUrl' : /*[[${applicationModel.apiUrl}]]*/ 'https://api-dev.srwd10.com',
+                'icms' : SH.icmsServer + SH.icmsTemplatePath,
+                'target_host' : SH.targetHost
+            };
+        });
+        require([
+            SH.app.staticHost + '/resources/shape/scripts/' + SH.appFolder + '/config.js',
+            'global_context'
+        ], function(config, gc) {
+
+            requirejs.config(SH.requirejs.config);
+
+            require(['common-i18n-main'], function() {
+                require(['message-banner'], function (MessageBanner) {
+                    if(SH.appName !== 'event') {
+                        var msgBanner = new MessageBanner({
+                            'element' : '#message-banner-container',
+                            'attributes' : {
+                                'message' : 'common.components.message_banner.sitedown.text',
+                                'icon' : 'alert4b_info',
+                                'timer': 120000
+                            }
+                        });
+                    }
+                });
+                require(['common-globalheader', 'common-login'], function() {
+                    require(['sh-ajax-module', 'main']);
+                });
+            });
+        });
+    </script>
+
+<!--S: resell-->
+<script src="https://slcq023-cache11.stubhubstatic.com/resources/shape/scripts/sellticket-1.pb_feature_pibsf_modules.0-SNAPSHOT/en-us/module-main.js"></script>
+<script src="https://slcq023-cache11.stubhubstatic.com/resources/shape/scripts/sellticket-1.pb_feature_pibsf_modules.0-SNAPSHOT/module-main.js"></script>
+<!--E: resell-->
+
+    <!-- BEGIN "page-JsIncludesBottom" fragment -->
+    <!--/* Normally only javascript code snippet should be put into this block */-->
+    <th:block th:replace="${applicationModel.fragmentName} :: page-JsIncludesBottom (${applicationModel}, ${env})"/>
+    <script src="//cache11.stubhubstatic.com/resources/shape/scripts/homepage-{%=modulesVersion.homepage%}/{%=locale%}/module-main.js"></script>
+    <script src="//cache11.stubhubstatic.com/resources/shape/scripts/homepage-{%=modulesVersion.homepage%}/module-main.js"></script>
+    <script th:inline="javascript">
+        SH.paypalClientId = {
+           'en-us': 'AXvDXhBjLogO1Sg7j51F6kV4Jci1mUackx7nPwIlCJggNEVPpMZtVlPjZcSW',
+           'en-gb': 'AUk-MyHnFuvfpuikltrkBxZJEfg_6eoOoCSLQ5hcs8-Aj_Q_xwDKbkuNDQjVe8KBFj63tfwQ51Vao2PD',
+           'de-de': 'AUR1n29wW9xLt8Z69uQLxRAKXypG8eQDeoNhiqMGsSfRhhI6h2O47FW5olUVanNZgPckda2BEr9KLZf5'
+        };
+        SH.paypalReturnUrl = {
+            'en-us': 'https://m.slcq035.co.uk/myx/paypallogin',
+            'en-gb': 'https://m.slcq035.co.uk/myx/paypallogin',
+            'de-de': 'https://m.slcq035.de/myx/paypallogin'
+        };
+        SH.paypalAuthend = 'sandbox';
+        SH.ticketbisMyaccountUrl = {
+            1: 'https://secure.ticketbis.com/en/miCuenta/compras',
+            2: 'https://secure.ticketbis.net/miCuenta/compras',
+            3: 'https://secure.ticketbis.de/miCuenta/compras',
+            4: 'https://secure.ticketbisfr.com/miCuenta/compras',
+            5: 'https://secure.ticketbis.com.mx/miCuenta/compras'
+        };
+        SH.PI = {
+          postalCodeMinLength: '{\"UK\": 4, \"DEFAULT\": 3}',
+          PiHighRiskCountries: 'DO,EG,GT,IL,PH,VE,KW'
+        };
+    </script>
+    <script src="https://www.paypalobjects.com/js/external/api.js"></script>
+    <!-- END "page-JsIncludesBottom" fragment -->
+</body>
+</html>
