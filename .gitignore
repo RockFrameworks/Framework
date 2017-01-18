@@ -22,11 +22,22 @@ dist
 Icon?
 ehthumbs.db
 Thumbs.db
+*.scssc
 
+
+# app-common folder #
+app-common*
+
+# generators folder #
+generators*
+
+# test output files #
 test-out/
+
 build*/
 node_modules/
+# or: node_modules*
 target/
 .idea/
 
-
+ui-pkg/spa/app/styles/_globals_.scss
