@@ -34,19 +34,7 @@
             "icmsTemplatePath": "/resources/shape/templates",
             "metaTagViewport": "width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no",
             "title": "StubHub Unified MyAccount",
-            "bugsnagApikey": "93127d2ea57c2c8a4b13b5bbf059da66",
-            "paypalAuthend": "${pi.paypal.api.env}",
-            "paypalClientId_us": "${pi.paypal.client.id}",
-            "paypalClientId_uk": "${pi.paypal.client.id.bob_2}",
-            "paypalClientId_de": "${pi.paypal.client.id.bob_3}",
-            "paypalReturnUrl_us": "${pi.paypal.return.url}",
-            "paypalReturnUrl_uk": "${pi.paypal.return.url.bob_2}",
-            "paypalReturnUrl_de": "${pi.paypal.return.url.bob_3}",
-            "ticketbisMyaccountUrl_us": "${ticketbis.myaccount.url.us}",
-            "ticketbisMyaccountUrl_uk": "${ticketbis.myaccount.url.uk}",
-            "ticketbisMyaccountUrl_de": "${ticketbis.myaccount.url.de}",
-            "ticketbisMyaccountUrl_fr": "${ticketbis.myaccount.url.fr}",
-            "ticketbisMyaccountUrl_mx": "${ticketbis.myaccount.url.mx}"
+            "bugsnagApikey": "93127d2ea57c2c8a4b13b5bbf059da66"
         };
     </script>
     
@@ -77,7 +65,7 @@
             src="http://cache11.stubhubstatic.com/promotions/scratch/ue-app-head/common-temp.js"></script>
 </head>
 <body>
-    <script th:inline="javascript">
+    <script>
         SH.mbox = {}; /*Global namespace for mbox a/b testing*/
         SH.appName = /*[[${applicationModel.appName}]]*/ '{%=appName%}';
         SH.appVersion = /*[[${applicationModel.appVersion}]]*/ '{%=appVersion%}';

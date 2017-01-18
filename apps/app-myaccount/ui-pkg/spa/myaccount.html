@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <th:block th:fragment="page-top (applicationModel, env)">
+            <link rel="stylesheet" th:href="(|${applicationModel.configBaseUrl}/resources/shape/styles/sellticket-${env['app.sellticket.modulesVersion']}/module-main.css|)"/>
+            <link rel="stylesheet" th:href="${env['app.default.brand']!=''}?  (|${applicationModel.configBaseUrl}/resources/shape/styles/homepage-${env['app.homepage.modulesVersion']}/module-main.${env['app.default.brand']}.css|) : (|${applicationModel.configBaseUrl}/resources/shape/styles/homepage-${env['app.homepage.modulesVersion']}/module-main.css|)"/>
+            <link rel="stylesheet" th:href="${env['app.default.brand']!=''}?  (|${applicationModel.configBaseUrl}/resources/shape/styles/buy-${env['app.buy.modulesVersion']}/module-main.${env['app.default.brand']}.css|) : (|${applicationModel.configBaseUrl}/resources/shape/styles/buy-${env['app.buy.modulesVersion']}/module-main.css|)"/>
+
+
+<!--S: order resell -->
+<link rel="stylesheet" href="https://slcq023-cache11.stubhubstatic.com/resources/shape/styles/sellticket-1.pb_feature_pibsf_modules.0-SNAPSHOT/module-main.css" />
+<link rel="stylesheet" href="https://slcq023-cache11.stubhubstatic.com/resources/shape/styles/sellticket-1.pb_feature_pibsf_modules.0-SNAPSHOT/module-main.css" />
+<!--E: order resell -->
+
+        </th:block>
+
+    </head>
+
+    <body>
+
+        <th:block th:fragment="header (applicationModel, env)">
+            <div id="page-status-container"></div>
+        </th:block>
+
+        <th:block th:fragment="main (applicationModel, env)">
+        </th:block>
+
+        <th:block th:fragment="footer (applicationModel, env)">
+        </th:block>
+
+        <th:block th:fragment="page-JsIncludesTop (applicationModel, env)">
+
+<!--S: order resell -->
+<script src="https://slcq023-cache11.stubhubstatic.com/resources/shape/scripts/sellticket-1.pb_feature_pibsf_modules.0-SNAPSHOT/en-us/module-main.js"></script>
+<script src="https://slcq023-cache11.stubhubstatic.com/resources/shape/scripts/sellticket-1.pb_feature_pibsf_modules.0-SNAPSHOT/module-main.js"></script>
+<!--E: order resell -->
+
+
+            <script th:src="|${applicationModel.configBaseUrl}/resources/shape/scripts/sellticket-${env['app.sellticket.modulesVersion']}/module-main.js|"></script>
+            <script th:inline="javascript">
+                SH.MYA = {
+                    buyModulesVersion: /*[[${env['app.buy.modulesVersion']}]]*/,
+                    sellticketModulesVersion: /*[[${env['app.sellticket.modulesVersion']}]]*/,
+                    achWhiteCountryList: /*[[${env['app.myaccount.ach.whiteCountryList']}]]*/,
+                    sellerPaymentsCurrencyList: /*[[${env['app.myaccount.sellerPayments.currencyList']}]]*/,
+                    sellerPaymentsByCurrency: /*[[${env['app.myaccount.sellerPayments.sellerPaymentsByCurrency']}]]*/,
+                    PiHighRiskCountries: /*[[${env['app.myaccount.pi.highRiskCountries']}]]*/,
+                    BtPayPalLocaleMapping: /*[[${env['app.myaccount.btPayPal.localeMapping']}]]*/
+                };
+            </script>
+        </th:block>
+
+        <th:block th:fragment="page-JsIncludesBottom (applicationModel, env)">
+            <script th:src="|${applicationModel.configBaseUrl}/resources/shape/scripts/homepage-${env['app.homepage.modulesVersion']}/${applicationModel.locale}/module-main.js|"></script>
+            <script th:src="|${applicationModel.configBaseUrl}/resources/shape/scripts/homepage-${env['app.homepage.modulesVersion']}/module-main.js|"></script>
+            <script th:inline="javascript">
+                SH.paypalClientId = {
+                   'en-us': /*[[${applicationModel.paypalClientId_us}]]*/,
+                   'en-gb': /*[[${applicationModel.paypalClientId_uk}]]*/,
+                   'de-de': /*[[${applicationModel.paypalClientId_de}]]*/
+                };
+                SH.paypalReturnUrl = {
+                    'en-us': /*[[${applicationModel.paypalReturnUrl_us}]]*/,
+                    'en-gb': /*[[${applicationModel.paypalReturnUrl_uk}]]*/,
+                    'de-de': /*[[${applicationModel.paypalReturnUrl_de}]]*/
+                };
+                SH.paypalAuthend = /*[[${applicationModel.paypalAuthend}]]*/;
+                SH.ticketbisMyaccountUrl = {
+                    1: /*[[${applicationModel.ticketbisMyaccountUrl_us}]]*/,
+                    2: /*[[${applicationModel.ticketbisMyaccountUrl_uk}]]*/,
+                    3: /*[[${applicationModel.ticketbisMyaccountUrl_de}]]*/,
+                    4: /*[[${applicationModel.ticketbisMyaccountUrl_fr}]]*/,
+                    5: /*[[${applicationModel.ticketbisMyaccountUrl_mx}]]*/
+                };
+            </script>
+            <script src="https://www.paypalobjects.com/js/external/api.js"></script>
+        </th:block>
+    </body>
+
+</html>

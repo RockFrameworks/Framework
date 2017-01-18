@@ -1,0 +1,105 @@
+{
+    "resourcesPath": "/resources/shape",
+    "appUrlPath": "/my",
+    "proxies": [{
+        "context": ["/shape", "/internal"],
+        "host": "www.slcq023.com",
+        "https": true,
+        "port": 443,
+        "changeOrigin": true
+    }],
+    "implementedLocalesList":["en-us" ],
+    "appCommon": {
+        "staticHost": "//slcq023-cache11.stubhubstatic.com",
+        "version": "5.0.2"
+    },
+    "app": {
+        "staticHost": "//localhost:7777"
+    },
+    "modulesVersion": {
+        "homepage": "2.0.59",
+        "sellticket": "2.1.3",
+        "buy": "6.0.1"
+    },
+    "login": {
+        "url": "iam.slcq023.com",
+        "path": "/iam/login",
+        "username": "api_us_sell_buyer06@testmail.com",
+        "password": "password"
+    },
+    "targetHost": "slcq023",
+    "locale": "en-us",
+    "brandToggle": {
+        "featureValue": ""
+    },
+    "requirejsoptimizer": {
+        "out": "main.js",
+        "include": [
+            "main",
+            "controllers/common_controller",
+            "controllers/orders_controller",
+            "controllers/order_receipt_controller",
+            "controllers/order_cart_relist_success_controller",
+            "controllers/order_cart_relist_controller",
+            "controllers/order_cart_receipt_controller",
+            "controllers/listings_controller",
+            "controllers/profile_controller",
+            "controllers/sales_controller",
+            "controllers/lms_print_controller",
+            "controllers/print_controller",
+            "controllers/payments_controller",
+            "controllers/upload_controller",
+            "controllers/rewards_controller",
+            "controllers/favorites_controller",
+            "controllers/settings_controller",
+            "controllers/edit_listing_controller",
+            "controllers/sellerinfo_controller",
+            "controllers/paypallogin_controller",
+            "controllers/verification_upload_controller",
+            "controllers/error_controller"
+        ],
+        "paths" : {
+            "foobunny": "empty:",
+            "underscore": "empty:",
+            "global_context": "empty:",
+            "formance": "empty:",
+
+            "component": "empty:",
+            "common-login": "empty:",
+            "common-batchModel": "empty:",
+            "login": "empty:",
+            "global_header": "empty:",
+            "common-globalheader": "empty:",
+            "banner": "empty:",
+            "common-banner": "empty:",
+            "jquery_fineuploaderbasic": "empty:",
+            "pdf_zoom": "empty:",
+            "imagesloaded": "empty:",
+            "datepicker": "empty:",
+            "datatables": "empty:",
+            "braintree": "empty:",
+            "mediator": "empty:",
+            "sh_mbox_util": "empty:",
+            "redirectionUtil": "empty:",
+            "urlUtil": "empty:",
+            "url-parser": "empty:",
+
+            "shcookie": "empty:",
+            "priceValidator":"empty:",
+            "sh_currency_format": "empty:",
+            "application_helper": "empty:",
+            "logger": "empty:",
+            "i18n": "empty:",
+            "sh_global_registry": "empty:",
+            "scriptsProps": "empty:",
+            "templates-bundle": "empty:",
+            "storage": "empty:",
+            "sellticket-priceGuidance-component": "empty:",
+            "sellticket-priceGuidance-i18n-props": "empty:",
+            "PiBsf-component": "empty:",
+            "sellticket-PiBsf-i18n-props": "empty:",
+            "backbone-retry-sync": "empty:",
+            "module-pushNotification": "empty:"
+        }
+    }
+}

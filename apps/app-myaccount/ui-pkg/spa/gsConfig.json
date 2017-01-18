@@ -1,0 +1,429 @@
+{
+  "countries": [
+    {
+      "countryCode": "US",
+      "countryId": 1,
+      "geoId": 196976,
+      "locales": [
+        "en-US",
+        "es-MX"
+      ],
+      "phoneCallingCode": "1"
+    },
+    {
+      "countryCode": "CA",
+      "countryId": 2,
+      "geoId": 197077,
+      "locales": [
+        "fr-CA"
+      ],
+      "phoneCallingCode": "1"
+    }
+  ],
+  "currencies": {
+    "defaultCurrency": {
+      "currencyCode": "USD",
+      "currencyId": 1,
+      "currencySymbol": "$"
+    },
+    "supportedCurrencies": [
+      {
+        "currencyCode": "USD",
+        "currencyId": 1,
+        "currencySymbol": "$"
+      }
+    ]
+  },
+  "domain": {
+    "domainDescription": "StubHub US",
+    "domainId": 1,
+    "domainName": "slcq025.com"
+  },
+  "features": [
+    {
+      "featureDescription": "add tld",
+      "featureName": "gs.features.1.common.module.addTld",
+      "featureValue": "TRUE"
+    },
+    {
+      "featureDescription": "Pinless Promo Code",
+      "featureName": "gs.features.1.common.pinless.promocode.pattern",
+      "featureValue": "COORS2016,MC092716"
+    },
+    {
+      "featureDescription": "The feature to show cookie banner",
+      "featureName": "gs.features.1.common.Banner.showCookieBanner",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "gs.features.1.common.globalHeader.helpTopicsLink",
+      "featureName": "gs.features.1.common.globalHeader.helpTopicsLink",
+      "featureValue": "http://stubhub-feedback.uservoice.com"
+    },
+    {
+      "featureDescription": "Hide Advertising in Global Header",
+      "featureName": "gs.features.1.common.globalHeader.hideAdvertising",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "Hide Copy Right in Global Header",
+      "featureName": "gs.features.1.common.globalHeader.hideCopyRight",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "unified golbal header hide gift certificate link",
+      "featureName": "gs.features.1.common.globalHeader.hideGiftCert",
+      "featureValue": "false"
+    },
+    {
+      "featureDescription": "Hide Jobs in Global Header",
+      "featureName": "gs.features.1.common.globalHeader.hideJobs",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "Hide LMS in Global Header",
+      "featureName": "gs.features.1.common.globalHeader.hideLMS",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "unified golbal header hide rewards link",
+      "featureName": "gs.features.1.common.globalHeader.hideRewards",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "unified golbal header hide sell link",
+      "featureName": "gs.features.1.common.globalHeader.hideSellLink",
+      "featureValue": "false"
+    },
+    {
+      "featureDescription": "Show Abbreviation Name in Global Header",
+      "featureName": "gs.features.1.common.globalHeader.showAbbrName",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "Show Advantage in Global Header",
+      "featureName": "gs.features.1.common.globalHeader.showAdvantage",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "gs.features.1.common.globalHeader.showChatLink",
+      "featureName": "gs.features.1.common.globalHeader.showChatLink",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "Show Explore SubMenus in Global Header",
+      "featureName": "gs.features.1.common.globalHeader.showExplMenus",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "gs.features.1.common.globalHeader.showFeedbackLink",
+      "featureName": "gs.features.1.common.globalHeader.showFeedbackLink",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "Show Full Name in Global Header",
+      "featureName": "gs.features.1.common.globalHeader.showFullName",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "gs.features.1.common.globalHeader.showHelpTopics",
+      "featureName": "gs.features.1.common.globalHeader.showHelpTopics",
+      "featureValue": "TRUE"
+    },
+    {
+      "featureDescription": "Show Imprint in Global Header",
+      "featureName": "gs.features.1.common.globalHeader.showImprint",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "Show Law in Global Header",
+      "featureName": "gs.features.1.common.globalHeader.showLaw",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "gs.features.1.common.globalHeader.showNewLogo",
+      "featureName": "gs.features.1.common.globalHeader.showNewLogo",
+      "featureValue": "TRUE"
+    },
+    {
+      "featureDescription": "gs.features.1.common.globalHeader.showOptOutLink",
+      "featureName": "gs.features.1.common.globalHeader.showOptOutLink",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "Show Tickets SubMenus in Global Header",
+      "featureName": "gs.features.1.common.globalHeader.showTktsMenus",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "unified golbal header hide geo location selector",
+      "featureName": "gs.features.1.common.hideGeoLocation",
+      "featureValue": "false"
+    },
+    {
+      "featureDescription": "gen3login flow",
+      "featureName": "gs.features.1.common.login.enable.gen3Login",
+      "featureValue": "TRUE"
+    },
+    {
+      "featureDescription": "Feature Toggle for Reset Password Flow",
+      "featureName": "gs.features.1.common.login.enableCreatePassword",
+      "featureValue": "TRUE"
+    },
+    {
+      "featureDescription": "Enable UA in App Common",
+      "featureName": "gs.features.1.common.login.enableUA",
+      "featureValue": "TRUE"
+    },
+    {
+      "featureDescription": "Gen3 Login Flow",
+      "featureName": "gs.features.1.common.login.gen3Login",
+      "featureValue": "TRUE"
+    },
+    {
+      "featureDescription": "IAM Proxy Login Flow",
+      "featureName": "gs.features.1.common.login.iamProxyLogin",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "Feature Toggle for Threat Metrix United States",
+      "featureName": "gs.features.1.common.login.isTMLoginOn",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "Gen3 Login Flow",
+      "featureName": "gs.features.1.common.login.release.gen3Login",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "uncheck sign up emails in Unified app common login",
+      "featureName": "gs.features.1.common.login.uncheckEmailOptin",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "gs.features.1.common.pdoExperience",
+      "featureName": "gs.features.1.common.pdoExperience",
+      "featureValue": "TOGGLE"
+    },
+    {
+      "featureDescription": "Stubhub Mobile Web Prod sAccount",
+      "featureName": "gs.features.1.common.sAccountMweb",
+      "featureValue": "stubhubmobilewebprod"
+    },
+    {
+      "featureDescription": "Stubhub Mobile Web Test sAccount",
+      "featureName": "gs.features.1.common.sAccountMwebTest",
+      "featureValue": "stubhubmobilewebdev"
+    },
+    {
+      "featureDescription": "Stubhub Prod sAccount",
+      "featureName": "gs.features.1.common.sAccountProd",
+      "featureValue": "stubhub"
+    },
+    {
+      "featureDescription": "Stubhub Test sAccount",
+      "featureName": "gs.features.1.common.sAccountTest",
+      "featureValue": "stubhubliztest"
+    },
+    {
+      "featureDescription": "Outage Banner (US)",
+      "featureName": "gs.features.1.common.showOutageBanner",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "Show Post Code",
+      "featureName": "gs.features.1.common.showPostcode",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "Proactive Chat (US)",
+      "featureName": "gs.features.1.common.showProactiveChat",
+      "featureValue": "TRUE"
+    },
+    {
+      "featureDescription": "Supported Card Types",
+      "featureName": "gs.features.1.common.supportedCardType",
+      "featureValue": "[{\"cardType\": \"visa\",\"id\": \"1\"}, {\"cardType\": \"mastercard\",\"id\": \"2\"}, {\"cardType\": \"amex\",\"id\":\"3\"}, {\"cardType\" : \"discover\",\"id\":\"4\"}]"
+    },
+    {
+      "featureDescription": "Enable notification bell in global_header",
+      "featureName": "gs.features.1.enableBell",
+      "featureValue": "TRUE"
+    },
+    {
+      "featureDescription": "gs.features.1.login.isTMLoginOn",
+      "featureName": "gs.features.1.login.isTMLoginOn",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "MobileSiteSupported",
+      "featureName": "gs.features.1.mobileapp.MobileSiteSupported",
+      "featureValue": "TRUE"
+    },
+    {
+      "featureDescription": "Disable Buyer Price in My Account",
+      "featureName": "gs.features.1.myaccount.disableBuyerPrice",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "AddBuyerPaymentEnabled",
+      "featureName": "gs.features.1.myaccount.enableAddBuyerPayment",
+      "featureValue": "TRUE"
+    },
+    {
+      "featureDescription": "EditBuyerSellerPaymentEnabled",
+      "featureName": "gs.features.1.myaccount.enableEditPayment",
+      "featureValue": "TRUE"
+    },
+    {
+      "featureDescription": "PushNotificationEnabled",
+      "featureName": "gs.features.1.myaccount.enablePushNotification",
+      "featureValue": "TRUE"
+    },
+    {
+      "featureDescription": "enableEditSection",
+      "featureName": "gs.features.1.myaccount.enableSection",
+      "featureValue": "TRUE"
+    },
+    {
+      "featureDescription": "TINEnabled",
+      "featureName": "gs.features.1.myaccount.enableTIN",
+      "featureValue": "TRUE"
+    },
+    {
+      "featureDescription": "Face value feature in Unified MyAccount",
+      "featureName": "gs.features.1.myaccount.faceValue",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "Hide Compare Listing feature in Unified MyAccount",
+      "featureName": "gs.features.1.myaccount.hideCompareListing",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "Hide Edit Listing feature in Unified MyAccount",
+      "featureName": "gs.features.1.myaccount.hideEditListing",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "hide inhand date in edit listing",
+      "featureName": "gs.features.1.myaccount.hideInhandDate",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "Hide link to old statement in Unified My Account",
+      "featureName": "gs.features.1.myaccount.hideLinkToOld",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "Hide Preferences feature in Unified MyAccount",
+      "featureName": "gs.features.1.myaccount.hidePreferences",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "Hide Report Issue in My Account",
+      "featureName": "gs.features.1.myaccount.hideReportIssue",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "hide upload PDF/Barcode option",
+      "featureName": "gs.features.1.myaccount.hideUpload.eventIds",
+      "featureValue": "9478394,9478395,9478397,9478398,9478399,9478400,9478401,9478402,9478403,9478404,9478405,9478406,9478407,9478409,9478411,9478413,9478414,9478415,9478416,9478417,9478419,9478420,9478425,9478426,9478428,9478429,9478431,9478432,9478435,9478436,9478437,9478438,9478439,9478442,9478443,9478445,9478448,9478449,9478451,9478452,9478454,9478455,9478457,9478458,9478459,9478460,9478461,9478462,9478463,9478464,9478465,9478466,9478468,9478469"
+    },
+    {
+      "featureDescription": "Show BT Paypal in My Account",
+      "featureName": "gs.features.1.myaccount.showBTPaypal",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "showCompletedSoldPdf",
+      "featureName": "gs.features.1.myaccount.showCompletedSoldPdf",
+      "featureValue": "TRUE"
+    },
+    {
+      "featureDescription": "Show resell link for confirmed orders",
+      "featureName": "gs.features.1.myaccount.showConfirmedResell",
+      "featureValue": "TRUE"
+    },
+    {
+      "featureDescription": "FavoriteEnable",
+      "featureName": "gs.features.1.myaccount.showFavorites",
+      "featureValue": "TRUE"
+    },
+    {
+      "featureDescription": "showLargeSellerFeature",
+      "featureName": "gs.features.1.myaccount.showLargeSellerFeature",
+      "featureValue": "TRUE"
+    },
+    {
+      "featureDescription": "Show Order Receipt",
+      "featureName": "gs.features.1.myaccount.showOrderReceipt",
+      "featureValue": "TRUE"
+    },
+    {
+      "featureDescription": "PaymentSearchEnable",
+      "featureName": "gs.features.1.myaccount.showPaymentSearch",
+      "featureValue": "TRUE"
+    },
+    {
+      "featureDescription": "Show Pi Payments in My Account",
+      "featureName": "gs.features.1.myaccount.showPiPayments",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "Show Request LMS in my account",
+      "featureName": "gs.features.1.myaccount.showRequestLMS",
+      "featureValue": "TRUE"
+    },
+    {
+      "featureDescription": "Show Seller Payment Setting in my account",
+      "featureName": "gs.features.1.myaccount.showSellerPaymentSetting",
+      "featureValue": "TRUE"
+    },
+    {
+      "featureDescription": "ShowTIN",
+      "featureName": "gs.features.1.myaccount.showTin",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "Value Added Tax feature in Unified MyAccount",
+      "featureName": "gs.features.1.myaccount.vat",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "CountryCodeSupported",
+      "featureName": "gs.features.1.myaccountapp.CountryCodeSupported",
+      "featureValue": "FALSE"
+    },
+    {
+      "featureDescription": "changeDeliveryAddress",
+      "featureName": "gs.features.1.myaccount.showChangeDeliveryAddress",
+      "featureValue": "TRUE"
+    },
+    {
+      "featureDescription": "enableVerifyBarcodes",
+      "featureName": "gs.features.1.myaccount.enableVerifyBarcodes",
+      "featureValue": "TRUE"
+    },
+    {
+      "featureDescription": "showExportListing",
+      "featureName": "gs.features.1.myaccount.showExportListing",
+      "featureValue": "TRUE"
+    },
+    {
+      "featureDescription": "enable new order page for shopping cart",
+      "featureName": "gs.features.1.myaccount.enableShoppingCart",
+      "featureValue": "TRUE"
+    }
+  ],
+  "locales": {
+    "defaultLocale": "en-US",
+    "supportedLocales": [
+      "en-US",
+      "es-MX",
+      "fr-CA"
+    ]
+  },
+  "siteDescription": "US SITE",
+  "siteId": 1
+}

@@ -1,0 +1,16 @@
+{
+    "appName": "myaccount",
+    "OMN": {
+        "pageName": "UE: MyAccount",
+        "pageType": "UE: MyAccount",
+        "siteSections": "MyAccount"
+    },
+    "uservoice": {
+        "forumId": "298329"
+    },
+    "appVersion": "2.0.2-SNAPSHOT",
+    "icmsTemplatePath": "/resources/shape/templates",
+    "metaTagViewport": "width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no",
+    "title": "StubHub Unified MyAccount",
+    "bugsnagApikey": "93127d2ea57c2c8a4b13b5bbf059da66"
+}
